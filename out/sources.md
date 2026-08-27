@@ -1,6 +1,6 @@
 # 数据源清单
 
-由 `update_prices.py` 于 2026-08-26T01:03:37 自动生成。
+由 `update_prices.py` 于 2026-08-27T07:02:21 自动生成。
 
 | 数据 Provider | 网页 | 抓取地址 | 许可 | 状态 | 记录数 |
 | --- | --- | --- | --- | --- | --- |
@@ -10,25 +10,25 @@
 | Azure AI Foundry | https://azure.microsoft.com/pricing/details/phi-3/ | `https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20` | Azure 公开价格表 | ✅ | 167 |
 | Chutes | https://chutes.ai | `https://llm.chutes.ai/v1/models` | 公开 API | ✅ | 14 |
 | Cortecs | https://cortecs.ai | `https://api.cortecs.ai/v1/models` | 公开 API | ✅ | 101 |
-| DeepInfra | https://deepinfra.com/models | `https://api.deepinfra.com/models/list` | 公开 API | ✅ | 207 |
-| Empirio Labs | https://empiriolabs.ai | `https://api.empiriolabs.ai/v1/models` | 公开 API | ✅ | 66 |
-| HuggingFace Router | https://huggingface.co/models?inference_provider=all | `https://router.huggingface.co/v1/models` | 公开 API | ✅ | 186 |
-| LiteLLM | https://github.com/BerriAI/litellm | `https://cdn.jsdelivr.net/gh/BerriAI/litellm@main/model_prices_and_cont` | MIT | ✅ | 2243 |
-| models.dev | https://models.dev | `https://models.dev/api.json` | MIT | ✅ | 5813 |
+| DeepInfra | https://deepinfra.com/models | `https://api.deepinfra.com/models/list` | 公开 API | ✅ | 211 |
+| Empirio Labs | https://empiriolabs.ai | `https://api.empiriolabs.ai/v1/models` | 公开 API | ✅ | 68 |
+| HuggingFace Router | https://huggingface.co/models?inference_provider=all | `https://router.huggingface.co/v1/models` | 公开 API | ✅ | 192 |
+| LiteLLM | https://github.com/BerriAI/litellm | `https://cdn.jsdelivr.net/gh/BerriAI/litellm@main/model_prices_and_cont` | MIT | ✅ | 2267 |
+| models.dev | https://models.dev | `https://models.dev/api.json` | MIT | ✅ | 5864 |
 | Moonshot AI / Kimi 官方文档 | https://platform.moonshot.ai/docs/pricing/chat-k3 | `https://platform.kimi.ai/docs/pricing/chat-k3.md` | 厂商官方文档 | ✅ | 10 |
 | Moonshot AI / Kimi 官方文档 | https://platform.moonshot.ai/docs/pricing/chat-k3 | `https://platform.kimi.ai/docs/pricing/chat-k27-code.md` | 厂商官方文档 | ✅ | 10 |
 | Moonshot AI / Kimi 官方文档 | https://platform.moonshot.ai/docs/pricing/chat-k3 | `https://platform.kimi.ai/docs/pricing/chat-k26.md` | 厂商官方文档 | ✅ | 10 |
 | Moonshot AI / Kimi 官方文档 | https://platform.moonshot.ai/docs/pricing/chat-k3 | `https://platform.kimi.ai/docs/pricing/chat-v1.md` | 厂商官方文档 | ✅ | 10 |
-| ofox | https://ofox.ai | `https://api.ofox.ai/v2/models/catalog?include=provider_price&limit=100` | 公开 API | ✅ | 133 |
+| ofox | https://ofox.ai | `https://api.ofox.ai/v2/models/catalog?include=provider_price&limit=100` | 公开 API | ✅ | 135 |
 | OpenAI 官方文档 | https://platform.openai.com/docs/pricing | `https://developers.openai.com/api/docs/pricing.md` | 厂商官方文档 | ✅ | 217 |
-| OpenRouter | https://openrouter.ai/models | `https://openrouter.ai/api/v1/models` | 公开 API | ✅ | 328 |
+| OpenRouter | https://openrouter.ai/models | `https://openrouter.ai/api/v1/models` | 公开 API | ✅ | 329 |
 | OVHcloud AI Endpoints | https://endpoints.ai.cloud.ovh.net | `https://catalog.endpoints.ai.ovh.net/rest/v2/openrouter` | 公开 API | ✅ | 12 |
 | Pioneer | https://pioneer.ai | `https://api.pioneer.ai/v1/models` | 公开 API | ✅ | 162 |
-| Requesty | https://requesty.ai | `https://router.requesty.ai/v1/models/managed` | 公开 API | ✅ | 115 |
+| Requesty | https://requesty.ai | `https://router.requesty.ai/v1/models/managed` | 公开 API | ✅ | 116 |
 | Tinfoil | https://tinfoil.sh | `https://inference.tinfoil.sh/v1/models` | 公开 API | ✅ | 8 |
-| Vercel AI Gateway | https://vercel.com/ai-gateway/models | `https://ai-gateway.vercel.sh/v1/models` | 公开 API | ✅ | 237 |
+| Vercel AI Gateway | https://vercel.com/ai-gateway/models | `https://ai-gateway.vercel.sh/v1/models` | 公开 API | ✅ | 241 |
 | xAI 官方文档 | https://docs.x.ai/docs/models | `https://docs.x.ai/developers/models.md` | 厂商官方文档 | ✅ | 19 |
-| Zhipu AI / GLM 官方文档 | https://docs.z.ai/guides/overview/pricing | `https://docs.z.ai/guides/overview/pricing.md` | 厂商官方文档 | ✅ | 35 |
+| Zhipu AI / GLM 官方文档 | https://docs.z.ai/guides/overview/pricing | `https://docs.z.ai/guides/overview/pricing.md` | 厂商官方文档 | ✅ | 36 |
 
 ## 说明
 
@@ -55,18 +55,18 @@ models.dev 的 `google.ts` 里写着 `cost: existing.cost`（价格取自手工�
 
 厂商改一个列头就会静默丢掉一个价格维度，所以认不出的东西必须报出来。
 
-- openai_md: 未识别的列头 `landscape`
-- openai_md: 未识别的列头 `details`
 - openai_md: 未识别的列头 `category`
-- openai_md: 未识别的列头 `pricing`
 - openai_md: 未识别的列头 `use case`
-- openai_md: 未识别的列头 `training`
 - openai_md: 未识别的列头 `portrait`
-- openai_md: 未识别的列头 `size`
 - openai_md: 未识别的列头 `estimated cost`
+- openai_md: 未识别的列头 `details`
+- openai_md: 未识别的列头 `training`
+- openai_md: 未识别的列头 `landscape`
+- openai_md: 未识别的列头 `pricing`
+- openai_md: 未识别的列头 `size`
 - openai_md: 跳过表格「Grouped Pricing Table data」— 没有可识别的价格列
-- anthropic_md: 未识别的列头 `tool use system prompt token count`
 - anthropic_md: 未识别的列头 `additional input tokens`
+- anthropic_md: 未识别的列头 `tool use system prompt token count`
 - anthropic_md: 未识别的列头 `tool choice`
 - anthropic_md: 跳过表格「Claude Platform on AWS pricing」— 找不到模型/工具名列
 - anthropic_md: 跳过表格「Claude in Microsoft Foundry pricing」— 找不到模型/工具名列
