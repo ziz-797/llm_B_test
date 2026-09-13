@@ -1,6 +1,6 @@
 # 数据源清单
 
-由 `update_prices.py` 于 2026-09-12T02:55:52 自动生成。
+由 `update_prices.py` 于 2026-09-13T02:55:51 自动生成。
 
 | 数据 Provider | 网页 | 抓取地址 | 许可 | 状态 | 记录数 |
 | --- | --- | --- | --- | --- | --- |
@@ -14,7 +14,7 @@
 | Empirio Labs | https://empiriolabs.ai | `https://api.empiriolabs.ai/v1/models` | 公开 API | ✅ | 68 |
 | HuggingFace Router | https://huggingface.co/models?inference_provider=all | `https://router.huggingface.co/v1/models` | 公开 API | ✅ | 199 |
 | LiteLLM | https://github.com/BerriAI/litellm | `https://cdn.jsdelivr.net/gh/BerriAI/litellm@main/model_prices_and_cont` | MIT | ✅ | 2818 |
-| models.dev | https://models.dev | `https://models.dev/api.json` | MIT | ✅ | 6170 |
+| models.dev | https://models.dev | `https://models.dev/api.json` | MIT | ✅ | 6175 |
 | Moonshot AI / Kimi 官方文档 | https://platform.moonshot.ai/docs/pricing/chat-k3 | `https://platform.kimi.ai/docs/pricing/chat.md` | 厂商官方文档 | ✅ | 12 |
 | Moonshot AI / Kimi 官方文档 | https://platform.moonshot.ai/docs/pricing/chat-k3 | `https://platform.kimi.ai/docs/pricing/chat.md` | 厂商官方文档 | ✅ | 12 |
 | Moonshot AI / Kimi 官方文档 | https://platform.moonshot.ai/docs/pricing/chat-k3 | `https://platform.kimi.ai/docs/pricing/chat.md` | 厂商官方文档 | ✅ | 12 |
@@ -24,9 +24,9 @@
 | OpenRouter | https://openrouter.ai/models | `https://openrouter.ai/api/v1/models` | 公开 API | ✅ | 347 |
 | OVHcloud AI Endpoints | https://endpoints.ai.cloud.ovh.net | `https://catalog.endpoints.ai.ovh.net/rest/v2/openrouter` | 公开 API | ✅ | 12 |
 | Pioneer | https://pioneer.ai | `https://api.pioneer.ai/v1/models` | 公开 API | ✅ | 162 |
-| Requesty | https://requesty.ai | `https://router.requesty.ai/v1/models/managed` | 公开 API | ✅ | 130 |
+| Requesty | https://requesty.ai | `https://router.requesty.ai/v1/models/managed` | 公开 API | ✅ | 129 |
 | Tinfoil | https://tinfoil.sh | `https://inference.tinfoil.sh/v1/models` | 公开 API | ✅ | 10 |
-| Vercel AI Gateway | https://vercel.com/ai-gateway/models | `https://ai-gateway.vercel.sh/v1/models` | 公开 API | ✅ | 250 |
+| Vercel AI Gateway | https://vercel.com/ai-gateway/models | `https://ai-gateway.vercel.sh/v1/models` | 公开 API | ✅ | 251 |
 | xAI 官方文档 | https://docs.x.ai/docs/models | `https://docs.x.ai/developers/models.md` | 厂商官方文档 | ✅ | 19 |
 | Zhipu AI / GLM 官方文档 | https://docs.z.ai/guides/overview/pricing | `https://docs.z.ai/guides/overview/pricing.md` | 厂商官方文档 | ✅ | 28 |
 
@@ -55,22 +55,22 @@ models.dev 的 `google.ts` 里写着 `cost: existing.cost`（价格取自手工�
 
 厂商改一个列头就会静默丢掉一个价格维度，所以认不出的东西必须报出来。
 
+- openai_md: 未识别的列头 `portrait`
 - openai_md: 未识别的列头 `details`
-- openai_md: 未识别的列头 `landscape`
-- openai_md: 未识别的列头 `estimated cost`
-- openai_md: 未识别的列头 `pricing`
 - openai_md: 未识别的列头 `category`
-- openai_md: 未识别的列头 `use case`
-- openai_md: 未识别的列头 `price per minute`
 - openai_md: 未识别的列头 `size`
 - openai_md: 未识别的列头 `training`
-- openai_md: 未识别的列头 `portrait`
+- openai_md: 未识别的列头 `use case`
+- openai_md: 未识别的列头 `estimated cost`
+- openai_md: 未识别的列头 `pricing`
+- openai_md: 未识别的列头 `landscape`
+- openai_md: 未识别的列头 `price per minute`
 - openai_md: 跳过表格「Pricing Table data」— 没有可识别的价格列
 - openai_md: 跳过表格「Grouped Pricing Table data」— 没有可识别的价格列
-- anthropic_md: 未识别的列头 `tool choice`
-- anthropic_md: 未识别的列头 `cache hits and refreshes`
-- anthropic_md: 未识别的列头 `tool use system prompt token count`
 - anthropic_md: 未识别的列头 `additional input tokens`
+- anthropic_md: 未识别的列头 `tool use system prompt token count`
+- anthropic_md: 未识别的列头 `cache hits and refreshes`
+- anthropic_md: 未识别的列头 `tool choice`
 - anthropic_md: 跳过表格「Claude Platform on AWS pricing」— 找不到模型/工具名列
 - anthropic_md: 跳过表格「Claude in Microsoft Foundry pricing」— 找不到模型/工具名列
 - anthropic_md: 跳过表格「Prompt caching」— 找不到模型/工具名列
