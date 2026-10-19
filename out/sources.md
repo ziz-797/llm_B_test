@@ -1,6 +1,6 @@
 # 数据源清单
 
-由 `update_prices.py` 于 2026-10-18T02:50:41 自动生成。
+由 `update_prices.py` 于 2026-10-19T03:03:54 自动生成。
 
 | 数据 Provider | 网页 | 抓取地址 | 许可 | 状态 | 记录数 |
 | --- | --- | --- | --- | --- | --- |
@@ -11,15 +11,15 @@
 | Chutes | https://chutes.ai | `https://llm.chutes.ai/v1/models` | 公开 API | ✅ | 14 |
 | Cortecs | https://cortecs.ai | `https://api.cortecs.ai/v1/models` | 公开 API | ✅ | 100 |
 | DeepInfra | https://deepinfra.com/models | `https://api.deepinfra.com/models/list` | 公开 API | ✅ | 224 |
-| Empirio Labs | https://empiriolabs.ai | `https://api.empiriolabs.ai/v1/models` | 公开 API | ✅ | 80 |
-| HuggingFace Router | https://huggingface.co/models?inference_provider=all | `https://router.huggingface.co/v1/models` | 公开 API | ✅ | 176 |
-| LiteLLM | https://github.com/BerriAI/litellm | `https://cdn.jsdelivr.net/gh/BerriAI/litellm@main/model_prices_and_cont` | MIT | ✅ | 2919 |
+| Empirio Labs | https://empiriolabs.ai | `https://api.empiriolabs.ai/v1/models` | 公开 API | ✅ | 84 |
+| HuggingFace Router | https://huggingface.co/models?inference_provider=all | `https://router.huggingface.co/v1/models` | 公开 API | ✅ | 175 |
+| LiteLLM | https://github.com/BerriAI/litellm | `https://cdn.jsdelivr.net/gh/BerriAI/litellm@main/model_prices_and_cont` | MIT | ✅ | 2933 |
 | models.dev | https://models.dev | `https://models.dev/api.json` | MIT | ✅ | 7237 |
 | Moonshot AI / Kimi 官方文档 | https://platform.moonshot.ai/docs/pricing/chat-k3 | `https://platform.kimi.ai/docs/pricing/chat.md` | 厂商官方文档 | ✅ | 12 |
 | Moonshot AI / Kimi 官方文档 | https://platform.moonshot.ai/docs/pricing/chat-k3 | `https://platform.kimi.ai/docs/pricing/chat.md` | 厂商官方文档 | ✅ | 12 |
 | Moonshot AI / Kimi 官方文档 | https://platform.moonshot.ai/docs/pricing/chat-k3 | `https://platform.kimi.ai/docs/pricing/chat.md` | 厂商官方文档 | ✅ | 12 |
 | Moonshot AI / Kimi 官方文档 | https://platform.moonshot.ai/docs/pricing/chat-k3 | `https://platform.kimi.ai/docs/models.md` | 厂商官方文档 | ✅ | 12 |
-| ofox | https://ofox.ai | `https://api.ofox.ai/v2/models/catalog?include=provider_price&limit=100` | 公开 API | ✅ | 154 |
+| ofox | https://ofox.ai | `https://api.ofox.ai/v2/models/catalog?include=provider_price&limit=100` | 公开 API | ✅ | 155 |
 | OpenAI 官方文档 | https://platform.openai.com/docs/pricing | `https://developers.openai.com/api/docs/pricing.md` | 厂商官方文档 | ✅ | 255 |
 | OpenRouter | https://openrouter.ai/models | `https://openrouter.ai/api/v1/models` | 公开 API | ✅ | 358 |
 | OVHcloud AI Endpoints | https://endpoints.ai.cloud.ovh.net | `https://catalog.endpoints.ai.ovh.net/rest/v2/openrouter` | 公开 API | ✅ | 10 |
@@ -55,19 +55,19 @@ models.dev 的 `google.ts` 里写着 `cost: existing.cost`（价格取自手工�
 
 厂商改一个列头就会静默丢掉一个价格维度，所以认不出的东西必须报出来。
 
-- openai_md: 未识别的列头 `training`
-- openai_md: 未识别的列头 `category`
-- openai_md: 未识别的列头 `details`
-- openai_md: 未识别的列头 `price per minute`
-- openai_md: 未识别的列头 `estimated cost`
 - openai_md: 未识别的列头 `pricing`
+- openai_md: 未识别的列头 `details`
+- openai_md: 未识别的列头 `estimated cost`
+- openai_md: 未识别的列头 `price per minute`
+- openai_md: 未识别的列头 `category`
 - openai_md: 未识别的列头 `use case`
+- openai_md: 未识别的列头 `training`
 - openai_md: 跳过表格「Pricing Table data」— 没有可识别的价格列
 - openai_md: 跳过表格「Grouped Pricing Table data」— 没有可识别的价格列
-- anthropic_md: 未识别的列头 `cache hits and refreshes`
-- anthropic_md: 未识别的列头 `tool use system prompt tokens: auto, none`
 - anthropic_md: 未识别的列头 `additional input tokens`
 - anthropic_md: 未识别的列头 `tool use system prompt tokens: any, tool`
+- anthropic_md: 未识别的列头 `tool use system prompt tokens: auto, none`
+- anthropic_md: 未识别的列头 `cache hits and refreshes`
 - anthropic_md: 跳过表格「Claude Platform on AWS pricing」— 找不到模型/工具名列
 - anthropic_md: 跳过表格「Claude in Microsoft Foundry pricing」— 找不到模型/工具名列
 - anthropic_md: 跳过表格「Prompt caching」— 找不到模型/工具名列
@@ -80,8 +80,6 @@ models.dev 的 `google.ts` 里写着 `cost: existing.cost`（价格取自手工�
 - anthropic_md: 跳过表格「Worked example」— 找不到模型/工具名列
 - xai_md: 跳过表格「Voice Pricing」— 列头可映射但未产出任何记录
 - zhipu_md: 未识别的列头 `cached input storage`
-- moonshot_md: 未识别的列头 `cache write price (ttl 1h)`
-- moonshot_md: 未识别的列头 `cache write price (ttl 5min)`
 - moonshot_md: 未识别的列头 `cached input price`
 - moonshot_md: 未识别的列头 `cache write price (ttl 1h)`
 - moonshot_md: 未识别的列头 `cache write price (ttl 5min)`
@@ -89,3 +87,5 @@ models.dev 的 `google.ts` 里写着 `cost: existing.cost`（价格取自手工�
 - moonshot_md: 未识别的列头 `cache write price (ttl 1h)`
 - moonshot_md: 未识别的列头 `cache write price (ttl 5min)`
 - moonshot_md: 未识别的列头 `cached input price`
+- moonshot_md: 未识别的列头 `cache write price (ttl 1h)`
+- moonshot_md: 未识别的列头 `cache write price (ttl 5min)`
