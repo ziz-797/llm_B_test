@@ -1,6 +1,6 @@
 # 数据源清单
 
-由 `update_prices.py` 于 2026-11-08T04:11:45 自动生成。
+由 `update_prices.py` 于 2026-11-09T04:26:17 自动生成。
 
 | 数据 Provider | 网页 | 抓取地址 | 许可 | 状态 | 记录数 |
 | --- | --- | --- | --- | --- | --- |
@@ -12,9 +12,9 @@
 | Cortecs | https://cortecs.ai | `https://api.cortecs.ai/v1/models` | 公开 API | ✅ | 101 |
 | DeepInfra | https://deepinfra.com/models | `https://api.deepinfra.com/models/list` | 公开 API | ✅ | 228 |
 | Empirio Labs | https://empiriolabs.ai | `https://api.empiriolabs.ai/v1/models` | 公开 API | ✅ | 87 |
-| HuggingFace Router | https://huggingface.co/models?inference_provider=all | `https://router.huggingface.co/v1/models` | 公开 API | ✅ | 142 |
+| HuggingFace Router | https://huggingface.co/models?inference_provider=all | `https://router.huggingface.co/v1/models` | 公开 API | ✅ | 141 |
 | LiteLLM | https://github.com/BerriAI/litellm | `https://cdn.jsdelivr.net/gh/BerriAI/litellm@main/model_prices_and_cont` | MIT | ✅ | 3374 |
-| models.dev | https://models.dev | `https://models.dev/api.json` | MIT | ✅ | 7278 |
+| models.dev | https://models.dev | `https://models.dev/api.json` | MIT | ✅ | 7279 |
 | Moonshot AI / Kimi 官方文档 | https://platform.moonshot.ai/docs/pricing/chat-k3 | `https://platform.kimi.ai/docs/pricing/chat.md` | 厂商官方文档 | ✅ | 0 |
 | Moonshot AI / Kimi 官方文档 | https://platform.moonshot.ai/docs/pricing/chat-k3 | `https://platform.kimi.ai/docs/pricing/chat.md` | 厂商官方文档 | ✅ | 0 |
 | Moonshot AI / Kimi 官方文档 | https://platform.moonshot.ai/docs/pricing/chat-k3 | `https://platform.kimi.ai/docs/pricing/chat.md` | 厂商官方文档 | ✅ | 0 |
@@ -55,17 +55,17 @@ models.dev 的 `google.ts` 里写着 `cost: existing.cost`（价格取自手工�
 
 厂商改一个列头就会静默丢掉一个价格维度，所以认不出的东西必须报出来。
 
-- openai_md: 未识别的列头 `short context 30m write`
+- openai_md: 未识别的列头 `long context 12h write`
+- openai_md: 未识别的列头 `short context 12h write`
 - openai_md: 未识别的列头 `pricing`
+- openai_md: 未识别的列头 `estimated cost`
+- openai_md: 未识别的列头 `short context 30m write`
+- openai_md: 未识别的列头 `use case`
+- openai_md: 未识别的列头 `category`
 - openai_md: 未识别的列头 `long context 30m write`
 - openai_md: 未识别的列头 `price per minute`
-- openai_md: 未识别的列头 `long context 12h write`
-- openai_md: 未识别的列头 `category`
-- openai_md: 未识别的列头 `estimated cost`
-- openai_md: 未识别的列头 `short context 12h write`
 - openai_md: 未识别的列头 `details`
 - openai_md: 未识别的列头 `training`
-- openai_md: 未识别的列头 `use case`
 - openai_md: 跳过表格「Grouped Pricing Table data」— 找不到模型/工具名列
 - openai_md: 跳过表格「Pricing Table data」— 没有可识别的价格列
 - openai_md: 跳过表格「Grouped Pricing Table data」— 没有可识别的价格列
