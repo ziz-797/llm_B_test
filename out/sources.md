@@ -1,6 +1,6 @@
 # 数据源清单
 
-由 `update_prices.py` 于 2026-11-24T08:10:55 自动生成。
+由 `update_prices.py` 于 2026-11-25T06:48:36 自动生成。
 
 | 数据 Provider | 网页 | 抓取地址 | 许可 | 状态 | 记录数 |
 | --- | --- | --- | --- | --- | --- |
@@ -8,21 +8,21 @@
 | AWS Bedrock | https://aws.amazon.com/bedrock/pricing/ | `https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/` | AWS 公开价格表 | ✅ | 823 |
 | AWS Bedrock | https://aws.amazon.com/bedrock/pricing/ | `https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrockF` | AWS 公开价格表 | ✅ | 315 |
 | Azure AI Foundry | https://azure.microsoft.com/pricing/details/phi-3/ | `https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20` | Azure 公开价格表 | ✅ | 221 |
-| Chutes | https://chutes.ai | `https://llm.chutes.ai/v1/models` | 公开 API | ✅ | 20 |
+| Chutes | https://chutes.ai | `https://llm.chutes.ai/v1/models` | 公开 API | ✅ | 19 |
 | Cortecs | https://cortecs.ai | `https://api.cortecs.ai/v1/models` | 公开 API | ✅ | 105 |
 | DeepInfra | https://deepinfra.com/models | `https://api.deepinfra.com/models/list` | 公开 API | ✅ | 231 |
 | Empirio Labs | https://empiriolabs.ai | `https://api.empiriolabs.ai/v1/models` | 公开 API | ✅ | 86 |
-| HuggingFace Router | https://huggingface.co/models?inference_provider=all | `https://router.huggingface.co/v1/models` | 公开 API | ✅ | 477 |
-| LiteLLM | https://github.com/BerriAI/litellm | `https://cdn.jsdelivr.net/gh/BerriAI/litellm@main/model_prices_and_cont` | MIT | ✅ | 4376 |
-| models.dev | https://models.dev | `https://models.dev/api.json` | MIT | ✅ | 8329 |
+| HuggingFace Router | https://huggingface.co/models?inference_provider=all | `https://router.huggingface.co/v1/models` | 公开 API | ✅ | 405 |
+| LiteLLM | https://github.com/BerriAI/litellm | `https://cdn.jsdelivr.net/gh/BerriAI/litellm@main/model_prices_and_cont` | MIT | ✅ | 4383 |
+| models.dev | https://models.dev | `https://models.dev/api.json` | MIT | ✅ | 8347 |
 | Moonshot AI / Kimi 官方文档 | https://platform.moonshot.ai/docs/pricing/chat-k3 | `https://platform.kimi.ai/docs/pricing/chat.md` | 厂商官方文档 | ✅ | 0 |
 | Moonshot AI / Kimi 官方文档 | https://platform.moonshot.ai/docs/pricing/chat-k3 | `https://platform.kimi.ai/docs/pricing/chat.md` | 厂商官方文档 | ✅ | 0 |
 | Moonshot AI / Kimi 官方文档 | https://platform.moonshot.ai/docs/pricing/chat-k3 | `https://platform.kimi.ai/docs/pricing/chat.md` | 厂商官方文档 | ✅ | 0 |
 | Moonshot AI / Kimi 官方文档 | https://platform.moonshot.ai/docs/pricing/chat-k3 | `https://platform.kimi.ai/docs/models.md` | 厂商官方文档 | ✅ | 0 |
-| ofox | https://ofox.ai | `https://api.ofox.ai/v2/models/catalog?include=provider_price&limit=100` | 公开 API | ✅ | 129 |
-| OpenAI 官方文档 | https://platform.openai.com/docs/pricing | `https://developers.openai.com/api/docs/pricing.md` | 厂商官方文档 | ✅ | 251 |
+| ofox | https://ofox.ai | `https://api.ofox.ai/v2/models/catalog?include=provider_price&limit=100` | 公开 API | ✅ | 131 |
+| OpenAI 官方文档 | https://platform.openai.com/docs/pricing | `https://developers.openai.com/api/docs/pricing.md` | 厂商官方文档 | ✅ | 267 |
 | OpenRouter | https://openrouter.ai/models | `https://openrouter.ai/api/v1/models` | 公开 API | ✅ | 353 |
-| OVHcloud AI Endpoints | https://endpoints.ai.cloud.ovh.net | `https://catalog.endpoints.ai.ovh.net/rest/v2/openrouter` | 公开 API | ✅ | 9 |
+| OVHcloud AI Endpoints | https://endpoints.ai.cloud.ovh.net | `https://catalog.endpoints.ai.ovh.net/rest/v2/openrouter` | 公开 API | ✅ | 15 |
 | Requesty | https://requesty.ai | `https://router.requesty.ai/v1/models/managed` | 公开 API | ✅ | 161 |
 | Tinfoil | https://tinfoil.sh | `https://inference.tinfoil.sh/v1/models` | 公开 API | ✅ | 8 |
 | Vercel AI Gateway | https://vercel.com/ai-gateway/models | `https://ai-gateway.vercel.sh/v1/models` | 公开 API | ✅ | 327 |
@@ -55,28 +55,28 @@ models.dev 的 `google.ts` 里写着 `cost: existing.cost`（价格取自手工�
 
 厂商改一个列头就会静默丢掉一个价格维度，所以认不出的东西必须报出来。
 
-- openai_md: 未识别的列头 `long context 12h write`
-- openai_md: 未识别的列头 `12h write`
+- openai_md: 未识别的列头 `short context 12h write`
 - openai_md: 未识别的列头 `30m write`
+- openai_md: 未识别的列头 `pricing`
+- openai_md: 未识别的列头 `standby rate`
+- openai_md: 未识别的列头 `estimated cost`
 - openai_md: 未识别的列头 `training`
-- openai_md: 未识别的列头 `category`
+- openai_md: 未识别的列头 `active rate`
+- openai_md: 未识别的列头 `short context 30m write`
+- openai_md: 未识别的列头 `12h write`
 - openai_md: 未识别的列头 `long context 30m write`
 - openai_md: 未识别的列头 `details`
-- openai_md: 未识别的列头 `short context 30m write`
-- openai_md: 未识别的列头 `short context 12h write`
-- openai_md: 未识别的列头 `standby rate`
 - openai_md: 未识别的列头 `use case`
-- openai_md: 未识别的列头 `pricing`
-- openai_md: 未识别的列头 `active rate`
-- openai_md: 未识别的列头 `estimated cost`
+- openai_md: 未识别的列头 `long context 12h write`
+- openai_md: 未识别的列头 `category`
 - openai_md: 跳过表格「Pricing Table data」— 没有可识别的价格列
 - openai_md: 跳过表格「Grouped Pricing Table data」— 没有可识别的价格列
-- anthropic_md: 未识别的列头 `tool use system prompt tokens: auto, none`
 - anthropic_md: 未识别的列头 `additional input tokens`
-- anthropic_md: 未识别的列头 `cache hit price per million tokens`
-- anthropic_md: 未识别的列头 `cache hits and refreshes`
-- anthropic_md: 未识别的列头 `tool use system prompt tokens: any, tool`
 - anthropic_md: 未识别的列头 `cache hit multiplier`
+- anthropic_md: 未识别的列头 `cache hit price per million tokens`
+- anthropic_md: 未识别的列头 `tool use system prompt tokens: any, tool`
+- anthropic_md: 未识别的列头 `cache hits and refreshes`
+- anthropic_md: 未识别的列头 `tool use system prompt tokens: auto, none`
 - anthropic_md: 跳过表格「Claude Platform on AWS pricing」— 找不到模型/工具名列
 - anthropic_md: 跳过表格「Claude in Microsoft Foundry pricing」— 找不到模型/工具名列
 - anthropic_md: 跳过表格「Prompt caching」— 找不到模型/工具名列
